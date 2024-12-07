@@ -51,6 +51,7 @@ struct HomeView: View {
                         }
                         
                     }
+                    .padding(.bottom, 50)
                     
                 }
                 
@@ -59,7 +60,7 @@ struct HomeView: View {
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 70)
             })
-            .padding(.bottom, 50)
+            
             
             if view.show, let selectedCourse = selectedCourse {
                 CourseDetailView(namespace: namespace, show: $view.show, selected: selectedCourse)

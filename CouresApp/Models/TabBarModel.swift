@@ -16,11 +16,12 @@ struct TabBar: Identifiable {
     var id: String = UUID().uuidString
     var tab: String
     var icon: FontAwesomeCode
+    var name: String
 }
 
 var tabBarsList: [TabBar] = [
-    TabBar( id: "homePage", tab: "HOME", icon: .home),
-    TabBar( id: "searchPage", tab: "PESQUISAR", icon: .search ),
-    TabBar( id: "favoritePage", tab: "FAVORITOS", icon: .star ),
-    TabBar( id: "menuBar", tab: "MENU", icon: .bars ),
+    TabBar( id: "homePage", tab: "HOME", icon: .home, name: "HOME"),
+    TabBar( id: "searchPage", tab: "PESQUISAR", icon: .search, name:"PESQUISAR"),
+    TabBar( id: "favoritePage", tab: "FAVORITOS", icon: .star, name: "FAVORITOS" ),
+    TabBar( id: "acountPage", tab: "ACCOUNT", icon: .bars, name: "MENU" ),
 ]

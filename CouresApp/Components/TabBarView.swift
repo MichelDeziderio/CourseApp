@@ -24,12 +24,12 @@ struct TabBarView: View {
                     }
                 } label: {
                     VStack(spacing: 0){
-                        FontIcon.text(.awesome5Solid(code: item.icon), fontsize: 30, color: selectedTab.pageView == item.tab ? Color("BgIcons") : Color("BgIcons").opacity(0.3))
+                        FontIcon.text(.awesome5Solid(code: item.icon), fontsize: 22, color: selectedTab.pageView == item.tab ? Color("BgIcons") : Color("BgIcons").opacity(0.3))
                             .symbolVariant(.fill)
-                            .frame(width: 44, height: 30)
+                            .frame(width: 44, height: 26)
                             .blendMode(selectedTab.pageView == item.tab ? .overlay : .normal)
                         
-                        Text(item.tab)
+                        Text(item.name)
                             .font(.footnote.weight(.semibold))
                             .padding(.top, 10)
                             .lineLimit(1)
@@ -44,11 +44,14 @@ struct TabBarView: View {
         }
         .padding(.horizontal, 8)
         .padding(.top, 14)
-        .frame(height: 88, alignment: .top)
-        .background(.ultraThinMaterial, in:
-            RoundedRectangle(cornerRadius: 34, style: .continuous))
-            .mask(
-                RoundedRectangle(cornerRadius: 30, style: .continuous)
+        .frame(height: 77, alignment: .top)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .opacity(1)
+                .mask(
+                    RoundedRectangle(cornerRadius: 30, style: .continuous)
+                )
         )
         .background(
             HStack {
@@ -58,9 +61,9 @@ struct TabBarView: View {
                     Spacer()
                     Spacer()
                 }
-                if selectedTab.pageView == "MENU" { Spacer() }
+                if selectedTab.pageView == "ACCOUNT" { Spacer() }
                 
-                Circle().fill(Color("BgTab")).frame(width: 90)
+                Circle().fill(Color("BgTab").opacity(0.6)).frame(width: 90)
                     .padding(.horizontal, 8)
                     
                 

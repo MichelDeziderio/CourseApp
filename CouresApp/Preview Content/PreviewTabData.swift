@@ -9,8 +9,8 @@ import Foundation
 import SwiftUIFontIcon
 
 let previewTabData: [TabBar] = [
-    TabBar( tab: "HOME", icon: .home),
-    TabBar( tab: "PESQUISAR", icon: .search ),
-    TabBar( tab: "FAVORITOS", icon: .star ),
-    TabBar( tab: "MENU", icon: .bars ),
+    TabBar( tab: "HOME", icon: .home, name: "HOME"),
+    TabBar( tab: "PESQUISAR", icon: .search, name:"PESQUISAR"),
+    TabBar( tab: "FAVORITOS", icon: .star, name: "FAVORITOS" ),
+    TabBar( tab: "ACCOUNT", icon: .bars, name: "MENU" ),
 ]

@@ -24,7 +24,7 @@ struct ContentView: View {
                 case "FAVORITOS":
                     FavoriteView()
                 default:
-                    MenuView()
+                    AcountView()
                 }
             }
         }
@@ -52,6 +52,7 @@ struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
             .environmentObject(selectedTab)
             .environmentObject(view)
     }

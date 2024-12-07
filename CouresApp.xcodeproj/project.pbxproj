@@ -22,7 +22,7 @@
 		A4DDE7F82D015BA0009CA1ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDE7F72D015BA0009CA1ED /* HomeView.swift */; };
 		A4DDE7FA2D0168D9009CA1ED /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDE7F92D0168D8009CA1ED /* SearchView.swift */; };
 		A4DDE7FC2D016957009CA1ED /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDE7FB2D016957009CA1ED /* FavoriteView.swift */; };
-		A4DDE7FE2D016AA0009CA1ED /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDE7FD2D016AA0009CA1ED /* MenuView.swift */; };
+		A4DDE7FE2D016AA0009CA1ED /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDE7FD2D016AA0009CA1ED /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		A4DDE7F72D015BA0009CA1ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A4DDE7F92D0168D8009CA1ED /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A4DDE7FB2D016957009CA1ED /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		A4DDE7FD2D016AA0009CA1ED /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A4DDE7FD2D016AA0009CA1ED /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 				A4DDE7F72D015BA0009CA1ED /* HomeView.swift */,
 				A4DDE7F92D0168D8009CA1ED /* SearchView.swift */,
 				A4DDE7FB2D016957009CA1ED /* FavoriteView.swift */,
-				A4DDE7FD2D016AA0009CA1ED /* MenuView.swift */,
+				A4DDE7FD2D016AA0009CA1ED /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 				A4DDE7FC2D016957009CA1ED /* FavoriteView.swift in Sources */,
 				A4DDE7EE2D01312B009CA1ED /* TabBarView.swift in Sources */,
 				A4CC99522CFE7EEC00377C37 /* CouresAppApp.swift in Sources */,
-				A4DDE7FE2D016AA0009CA1ED /* MenuView.swift in Sources */,
+				A4DDE7FE2D016AA0009CA1ED /* AccountView.swift in Sources */,
 				A4CC99632CFE7FA200377C37 /* CoursesModel.swift in Sources */,
 				A4CC99682CFE86DF00377C37 /* CourseDetailView.swift in Sources */,
 				A4CC99602CFE7F5900377C37 /* PreviewCourseData.swift in Sources */,
