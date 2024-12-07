@@ -5,7 +5,7 @@ Essse APP serve para mostrar minhas tecnicas de criação.
 # Nele consiste as telas:
 
 - Inicial com os cursos
-- Detalhe que exisbe os detalhes de cada curso
+- Detalhe, que exibe os detalhes de cada curso
 - Pesquisa, onde o usuário pode pesquisar o curso desejado pelo título
 - Menu, onde o usuário pode acessar o perfil, minha conta, configurações e sair do app
 
@@ -24,7 +24,7 @@ Essse APP serve para mostrar minhas tecnicas de criação.
 ## Estrutura do projeto
 
 - View
-  - Views components
-  - Compontes
-  - Models
+  - Views components [ Home, Search, Favorite, Menu ]
+  - Compontes [ Course, CourseDetail, TabBar ]
+  - Models [ CourseModel, TabBarModel ]
   
