@@ -27,6 +27,8 @@ struct FavoriteView: View {
                                 .font(.headline)
                                 .foregroundColor(.gray)
                                 .padding()
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                
                     }
                     
                     ForEach(courses) { course in
