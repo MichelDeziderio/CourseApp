@@ -13,6 +13,7 @@ struct CourseDetailView: View {
     @Binding var show: Bool
     @EnvironmentObject var view: SelectedDetailView
     var selected: Course
+    @State private var like: Bool = false
     
     var body: some View {
         
@@ -26,6 +27,7 @@ struct CourseDetailView: View {
             .ignoresSafeArea()
             .background(Color(("Background")))
             
+            // MARK: Button Close Course Detail
             Button {
                 withAnimation(.spring(response: 0.6, dampingFraction: 0.8)){
                     view.show.toggle()
@@ -37,8 +39,25 @@ struct CourseDetailView: View {
                     .padding(8)
                     .background(.ultraThinMaterial, in: Circle())
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .padding(20)
+            
+            // MARK: Button Like and Deslike Course
+            Button {
+                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)){
+                    if let index = courses.firstIndex(where: { $0.id == selected.id }) {
+                        courses[index].like.toggle()
+                        like = courses[index].like
+                    }
+                }
+            } label: {
+                FontIcon.text(.awesome5Solid(code: .heart), fontsize: 30, color: like ? Color(.red).opacity(0.6) :  Color("BgIcons").opacity(0.6))
+            }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             .padding(20)
+            .onAppear {
+                like = selected.like
+            }
             
             Spacer()
             
