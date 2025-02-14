@@ -16,3 +16,4 @@
 - @EnvironmentObject
 - State para controle de estado dentro do APP
 - Componentes reutilizáveis ( card/cursos, tela de detalhes e tabBar Navigation )
+- Modos Dark e Light
